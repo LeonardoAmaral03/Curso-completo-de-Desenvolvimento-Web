@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Jquery eventos - mouse</title>
+
+		<!-- jQuery -->
+		<script src="jquery-3.2.1.js"></script>
+
+		<script type="text/javascript">
+			
+			// Garante que o DOM foi totalmente carregado
+			$(document).ready( function() {
+
+				// click
+				// dblclick
+				// mousedown
+				// mouseover
+				// mouseout
+
+				/*$('#div1').click( function() {
+					alert("Elemento foi clicado");
+				});*/
+
+				/*$('#div1').dblclick( function() {
+					alert("Elemento foi clicado duas vezes");
+				});*/
+
+				/*$('#div1').mousedown( function() {
+					alert("Elemento foi clicado");
+				});*/
+
+				/*$('#div1').mouseover( function() {
+					alert("Elemento foi sobreposto");
+				});*/
+
+				$('#div1').mouseout( function() {
+					alert("Área do elemento foi deixada pelo cursor");
+				});
+
+			});
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<div id="div1" style="height: 150px; width: 150px; background: #CCC"></div>
+
+	</body>
+</html>
